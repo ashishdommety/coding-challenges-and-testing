@@ -30,7 +30,7 @@ describe("non-repeated character", function(){
 describe("prime Check", function(){
   it("should check if number is prime or not", function(){
     allFunctions.primeCheck(137).should.equal(true);
-    allFunctions.primeCheck(237).should.equal(false);
-    allFunctions.primeCheck("hello").should.equal("please enter a number");
+    allFunctions.primeCheck(222).should.equal(false);
+    allFunctions.primeCheck("hello").should.equal("not a number");
   })
 })

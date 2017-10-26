@@ -23,7 +23,20 @@ module.exports = {
   },
 
   //check Prime Number
-  primeCheck: (str) => {
+  primeCheck: (num) => {
+    if(typeof(num) !== 'number'){
+      return "not a number";
+    }
 
+    let divisor = 2;
+    while (num > divisor) {
+      let remainder = num % divisor;
+      if (num % divisor === 0) {
+        return false;
+      } else {
+        divisor++;
+      }
+    }
+    return true;
   }
 }
