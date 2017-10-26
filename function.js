@@ -1,18 +1,18 @@
 module.exports = {
   // titleize a string
-  titleize: ((str) => {
+  titleize: (str) => {
     return str.split(" ")
       .map((item) => item.replace(item.charAt(0), item.charAt(0).toUpperCase()))
       .join(" ");
-  }),
+  },
 
   // convert a number to string
-  returnString: ((num) => {
+  returnString: (num) => {
     return num.toString();
-  }),
+  },
 
   //finds non-repeated character
-  nonRepeated: ((str) => {
+  nonRepeated: (str) => {
     for (let i = 0; i < str.length; i++) {
       let currentCharacter = str.charAt(i);
       if (str.indexOf(currentCharacter) == i && str.indexOf(currentCharacter, i + 1) == -1) {
@@ -20,7 +20,10 @@ module.exports = {
       }
     }
     return 'no non-repeats';
-  }),
+  },
 
-  //
+  //check Prime Number
+  primeCheck: (str) => {
+
+  }
 }

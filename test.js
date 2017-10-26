@@ -25,3 +25,12 @@ describe("non-repeated character", function(){
     allFunctions.nonRepeated("ababab").should.equal('no non-repeats');
   })
 })
+
+//check if number given is prime
+describe("prime Check", function(){
+  it("should check if number is prime or not", function(){
+    allFunctions.primeCheck(137).should.equal(true);
+    allFunctions.primeCheck(237).should.equal(false);
+    allFunctions.primeCheck("hello").should.equal("please enter a number");
+  })
+})
