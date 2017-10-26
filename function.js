@@ -24,19 +24,20 @@ module.exports = {
 
   //check Prime Number
   primeCheck: (num) => {
+    // check if num is actually a number
     if(typeof(num) !== 'number'){
       return "not a number";
     }
 
-    let divisor = 2;
-    while (num > divisor) {
-      let remainder = num % divisor;
+    let divisor = 2; // create starting divisor
+
+    while (num > divisor) { // loop through num as long as it's greater than divisor
       if (num % divisor === 0) {
-        return false;
+        return false; // if num is divisible by divisor
       } else {
-        divisor++;
+        divisor++; // if not, increase the divisor
       }
     }
-    return true;
+    return true; // as soon as divisor is greater than number, we know it's a prime
   }
 }
