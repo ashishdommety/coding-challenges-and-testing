@@ -1,0 +1,15 @@
+{
+  "name": "ash",
+  "version": "1.0.0",
+  "description": "general test",
+  "main": "test.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
