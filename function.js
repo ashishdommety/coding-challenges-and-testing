@@ -5,10 +5,13 @@ module.exports = {
       .map((item) => item.replace(item.charAt(0), item.charAt(0).toUpperCase()))
       .join(" ");
   }),
+
   // convert a number to string
   returnString: ((num) => {
     return num.toString();
   }),
+
+  //finds non-repeated character
   nonRepeated: ((str) => {
     for (let i = 0; i < str.length; i++) {
       let currentCharacter = str.charAt(i);
@@ -17,5 +20,7 @@ module.exports = {
       }
     }
     return 'no non-repeats';
-  })
+  }),
+
+  //
 }
