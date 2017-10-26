@@ -21,6 +21,6 @@ describe("return string", function(){
 //find first non-repeated character
 describe("non-repeated character", function(){
   it("should find first non-repeated character", function(){
-    allFunctions.nonRepeated("sports").should.equal("p");
+    allFunctions.nonRepeated("sportsbatsman").should.equal('p');
   })
 })
