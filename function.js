@@ -7,7 +7,11 @@ module.exports = {
               .join(" ");
   }),
 // convert a number to string
-  returnString : (num) =>{
+  returnString : ((num) =>{
     return num.toString();
-  }
+  }),
+  nonRepeated: ((str) => {
+
+  })
+
 }
