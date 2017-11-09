@@ -44,19 +44,15 @@ module.exports = {
   //remove duplicate characters from a string
   removeDuplicates: (str) => {
     var word = str;
-    // initialize an empty array
     var wordArr = [];
-
     //loop through each character in the string.
-    for(var i = 0; i < word.length; i++){
-      var character = word.charAt(i);
-      if(word.indexOf(character)===i && word.indexOf(character, i+1)!==-1){
-        //check if an index exists after it.
-        //then it means its a repeating character.
-        //if it does, remove that character from the string.
-        word = word.replace(character,'');
+    for(var i = 0; i < str.length; i++){
+      var character = str.charAt(i);
+      //if duplicate doesn't exist, push it to the array
+      if(str.indexOf(character)===i && str.indexOf(character, i+1)==-1){
+        wordArr.push(character);
       }
     }
-    return word;
+    return wordArr.join("");
   }
 }
