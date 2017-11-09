@@ -34,3 +34,11 @@ describe("prime Check", function(){
     allFunctions.primeCheck("hello").should.equal("not a number");
   })
 })
+
+//remove duplicates from a string
+describe("Remove Duplicates from String", function(){
+  it("should remove duplicate characters from a string", function(){
+    allFunctions.removeDuplicates("hello").should.equal("helo");
+    // allFunctions.removeDuplicates("nonsense").should.equal("nose");
+  })
+})
