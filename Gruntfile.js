@@ -2,7 +2,9 @@ module.exports = function(grunt) {
   //loading grunt tasks
   grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
+  //grunt config
   grunt.initConfig({
     // Configure a mochaTest task
     mochaTest: {
@@ -26,14 +28,18 @@ module.exports = function(grunt) {
         tasks: ['mochaTest'],
       },
     },
+    jshint: {
+      all: ['Gruntfile.js', 'function.js', 'test.js']
+    }
   });
 
+  // grunt tasks
   grunt.registerTask("greet", function() {
     console.log("Hey there, how are you?");
   });
 
   grunt.registerTask('test', 'mochaTest');
 
-  grunt.registerTask('default',['mochaTest', 'watch'])
+  grunt.registerTask('default', ['mochaTest', 'watch']);
 
 };
