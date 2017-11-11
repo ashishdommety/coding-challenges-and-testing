@@ -43,13 +43,13 @@ module.exports = {
 
   //remove duplicate characters from a string
   removeDuplicates: (str) => {
-    var word = str;
-    var wordArr = [];
+    let word = str;
+    let wordArr = [];
     //loop through each character in the string.
-    for(var i = 0; i < str.length; i++){
-      var character = str.charAt(i);
+    for(let i = 0; i < str.length; i++){
+      let character = str.charAt(i);
       //if duplicate doesn't exist, push it to the array
-      if(str.indexOf(character)===i && str.indexOf(character, i+1)==-1){
+      if(str.indexOf(character)===i && str.indexOf(character, i+1)===-1){
         wordArr.push(character);
       }
     }

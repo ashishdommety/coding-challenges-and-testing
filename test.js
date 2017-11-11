@@ -37,9 +37,12 @@ describe("prime Check", function(){
 
 //remove duplicates from a string
 describe("Remove Duplicate from String", function(){
-  it("should remove duplicate characters from a string leaving only one", function(){
+  it("should remove duplicate characters from a string", function(){
     allFunctions.removeDuplicates("hello").should.equal("heo");
+    allFunctions.removeDuplicates("helololololol").should.equal("he");
     allFunctions.removeDuplicates("sportsman").should.equal("portman");
     allFunctions.removeDuplicates("nonsense").should.equal("o");
+    allFunctions.removeDuplicates("Learn more javascript dude").should.equal("Lnmojvsciptu");
   });
 });
+
