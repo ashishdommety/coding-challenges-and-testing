@@ -24,11 +24,14 @@ module.exports = function(grunt) {
     },
     watch: {
       js: {
-        files: ['function.js'],
-        tasks: ['mochaTest'],
+        files: ['function.js','test.js'],
+        tasks: ['jshint','mochaTest']
       },
     },
     jshint: {
+      options:{
+        esversion: 6
+      },
       all: ['Gruntfile.js', 'function.js', 'test.js']
     }
   });
@@ -40,6 +43,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('test', 'mochaTest');
 
-  grunt.registerTask('default', ['mochaTest', 'watch']);
+  grunt.registerTask('default', ['watch']);
 
 };

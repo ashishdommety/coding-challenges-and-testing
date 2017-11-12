@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 //requiring chai
 var should = require("chai").should();
 
