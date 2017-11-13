@@ -1,6 +1,5 @@
-module.exports = function(){
+module.exports = function(str){
   //remove duplicate characters from a string
-  removeDuplicates: (str) => {
     var word = str;
     var wordArr = [];
     //loop through each character in the string.
@@ -13,5 +12,4 @@ module.exports = function(){
     }
     // return wordArr;
     return wordArr.join("");
-  }
 }

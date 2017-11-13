@@ -1,9 +1,8 @@
-const allTheFuncs = () =>{
-  require("./titleize.js");
-  require("./nonRepeated.js");
-  require("./primeCheck.js");
-  require("./removeDuplicates.js");
+module.exports = {
+  titleize: require('./titleize.js'),
+  nonRepeated: require("./nonRepeated.js"),
+  primeCheck: require("./primeCheck.js"),
+  removeDuplicates: require("./removeDuplicates.js")
 };
 
-module.exports = allTheFuncs;
-console.log(allTheFuncs);
+// console.log(module.exports);

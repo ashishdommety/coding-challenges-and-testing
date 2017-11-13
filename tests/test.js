@@ -2,9 +2,7 @@
 //requiring chai
 var should = require("chai").should();
 
-const allFunctions = require("../functions/index.js")();
-
-console.log("allFunctions: ", allFunctions);
+const allFunctions = require("../functions/index.js");
 
 //capitalize title
 describe("capitalize title", function(){
