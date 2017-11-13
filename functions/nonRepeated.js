@@ -7,4 +7,4 @@ module.exports = function(str){
       }
     }
     return 'no non-repeats';
-}
+};

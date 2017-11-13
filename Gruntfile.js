@@ -19,12 +19,12 @@ module.exports = function(grunt) {
         },
         // NOTE: this is how it should actually be done. this will allow different tests in different files.
         // src: ['test/**/*.js']
-        src: ['test.js']
+        src: ['tests/index.js']
       }
     },
     watch: {
       js: {
-        files: ['function.js','test.js'],
+        files: ['functions/*.js','tests/*.js'],
         tasks: ['jshint','mochaTest']
       },
     },
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
       options:{
         esversion: 6
       },
-      all: ['Gruntfile.js', 'function.js', 'test.js']
+      all: ['Gruntfile.js', 'functions/*.js', 'tests/*.js']
     }
   });
 

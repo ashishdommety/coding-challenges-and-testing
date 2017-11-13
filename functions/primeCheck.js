@@ -12,4 +12,4 @@ module.exports = function(num){
       }
     }
     return true; // as soon as divisor is greater than number, we know it's a prime
-}
+};

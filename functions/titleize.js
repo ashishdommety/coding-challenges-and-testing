@@ -4,4 +4,4 @@ module.exports =
     return str.split(" ")
       .map((item) => item.replace(item.charAt(0), item.charAt(0).toUpperCase()))
       .join(" ");
-  }
+  };

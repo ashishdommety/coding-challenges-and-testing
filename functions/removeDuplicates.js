@@ -12,4 +12,4 @@ module.exports = function(str){
     }
     // return wordArr;
     return wordArr.join("");
-}
+};
