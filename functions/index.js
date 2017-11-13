@@ -4,5 +4,3 @@ module.exports = {
   primeCheck: require("./primeCheck.js"),
   removeDuplicates: require("./removeDuplicates.js")
 };
-
-// console.log(module.exports);
