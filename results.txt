@@ -12,6 +12,9 @@
 [0m  Remove Duplicate from String[0m
   [32m  √[0m[90m should remove duplicate characters from a string leaving only one[0m
 
+[0m  swap numbers without using temp[0m
+  [32m  √[0m[90m should swap two numbers without using the temp variable[0m
 
-[92m [0m[32m 4 passing[0m[90m (84ms)[0m
+
+[92m [0m[32m 5 passing[0m[90m (30ms)[0m
 
