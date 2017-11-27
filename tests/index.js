@@ -8,3 +8,4 @@ require("./nonRepeatedTest.js");
 require("./primeCheckTest.js");
 require("./removeDuplicatesTest.js");
 require("./swapNumberTest.js");
+require("./targetSumExistsTest.js");
