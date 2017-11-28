@@ -5,6 +5,6 @@ describe("Check if target sum exists in the array", function() {
     allFunctions.targetSumExists([10, 20], 30).should.equal(true);
     allFunctions.targetSumExists([10,20], 25).should.equal(false);
     // allFunctions.targetSumExists([10,20], 35).should.equal(false);// add this test
-    // allFunctions.targetSumExists([10,20],40).should.equal(true);//then add this test
+    allFunctions.targetSumExists([10,20],40).should.equal(true);//then add this test
   });
 });
