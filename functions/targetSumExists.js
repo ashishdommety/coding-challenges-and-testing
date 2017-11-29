@@ -1,5 +1,5 @@
 module.exports = (arr, target) => {
-  let remainder = target;
+  // let remainder = target;
 
   function loop(remainder){
     for (let i = 0; i < arr.length + 1; i++) {
@@ -10,12 +10,12 @@ module.exports = (arr, target) => {
         return false;
       }
     }
-    if(remainder > 0){
-      loop(remainder);
-    }
+    // if(remainder > 0){
+    //   return loop(remainder);
+    // }
   }
 
-  return loop(remainder);
+  return loop(target);
 
 //re-name so that we don't have so many 'remainders'
 };

@@ -16,17 +16,8 @@
   [32m  √[0m[90m should swap two numbers without using the temp variable[0m
 
 [0m  Check if target sum exists in the array[0m
-  [31m  1) should check if the elements in an array can sum up to the target[0m
+  [32m  √[0m[90m should check if the elements in an array can sum up to the target[0m
 
 
-[92m [0m[32m 5 passing[0m[90m (21ms)[0m
-[31m  1 failing[0m
-
-[0m  1) Check if target sum exists in the array
-       should check if the elements in an array can sum up to the target:
-[0m[31m     TypeError: Cannot read property 'should' of undefined[0m[90m
-    at Context.<anonymous> (tests\targetSumExistsTest.js:8:45)
-  
-[0m
-
+[92m [0m[32m 6 passing[0m[90m (14ms)[0m
 
